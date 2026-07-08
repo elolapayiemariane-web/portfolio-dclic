@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elola Payié Mariane - Portfolio Télécommunications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Payié Mariane ELOLA</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#accueil" class="active">ACCUEIL</a></li>
+        <li><a href="#projets">PROJETS</a></li>
+        <li><a href="#competences">COMPÉTENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="hero-texte">
+      <p class="surtitre">// Elève Ingénieure de Conception des Télécommunications · ESMT Dakar</p>
+      <h1 class="titre-hero">
+        ELOLA Payié<br>
+        <span class="accent-bleu">Mariane</span>
+      </h1>
+      <p class="description-hero">
+        Étudiante en 1ère année à l'ESMT Dakar, passionnée par les réseaux, la cybersécurité
+        et les nouvelles technologies. Déterminée à contribuer à l'innovation tout en
+        promouvant l'accès des femmes aux carrières scientifiques.
+      </p>
+      <div class="boutons-hero">
+        <a href="#projets" class="btn btn-principal">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondaire">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="hero-visuel">
+      <img src="assets/photo-profil.png" alt="Elola Payié Mariane" class="photo-principale">
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="apropos">
+    <div class="apropos-image">
+      <img src="assets/photo-profil.png" alt="Elola Payié Mariane">
+    </div>
+    <div class="apropos-texte">
+      <h2>À propos de moi</h2>
+      <p>
+        Passionnée par les infrastructures réseaux et la connectivité RF, je poursuis actuellement
+        mes études en ingénierie télécom à l'ESMT Dakar. Mon approche est guidée par la rigueur
+        technique et la clarté systémique. J'aspire à concevoir des solutions de demain pour un
+        monde interconnecté avec précision.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section-projets">
+    <h2 class="titre-section">Mes Projets</h2>
+
+    <!-- Onglets de filtre par matière -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-filtre="tous">Tous</button>
+      <button class="tab-btn" data-filtre="signal">Traitement du Signal</button>
+      <button class="tab-btn" data-filtre="reseaux">Réseaux</button>
+      <button class="tab-btn" data-filtre="embarque">Systèmes Embarqués</button>
+      <button class="tab-btn" data-filtre="fibre">Transmission numérique</button>
+    </div>
+
+   
+    <div class="grille-projets-portfolio">
+
+      <!-- PROJET 1 -->
+      <div class="carte-projet-portfolio" data-categorie="reseaux">
+        <div class="image-projet-placeholder">
+          <img src="assets/projets/doc_6a4921a5d332b4.07834984.pkt" alt="Configuration réseau d'entreprise">
+        </div>
+        <div class="contenu-carte-projet">
+          <div class="badge-categorie">
+            <span class="icone-badge">🌐</span>
+            RÉSEAUX
+          </div>
+          <h3>Configuration d'un réseau d'entreprise</h3>
+          <p>Mise en place d'une architecture réseau complète avec VLAN, routage inter-VLAN et sécurisation des accès sous Packet Tracer.</p>
+          <p class="competences-projet">Compétences acquises : segmentation réseau, ACL, protocoles de routage dynamique.</p>
+          <div class="tags-technologies">
+            <span class="tag-tech">Packet Tracer</span>
+            <span class="tag-tech">VLAN</span>
+            <span class="tag-tech">OSPF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 2 -->
+      <div class="carte-projet-portfolio" data-categorie="embarque">
+        <div class="image-projet-placeholder">
+          <img src="assets/projets/exemple-embarque.jpg" alt="Système embarqué Arduino">
+        </div>
+        <div class="contenu-carte-projet">
+          <div class="badge-categorie">
+            <span class="icone-badge">🌡️</span>
+            SYSTÈMES EMBARQUÉS
+          </div>
+          <h3>Station météo connectée</h3>
+          <p>Conception d'un système embarqué de mesure de température et d'humidité avec transmission des données via Wi-Fi.</p>
+          <p class="competences-projet">Compétences acquises : programmation Arduino, capteurs, communication série.</p>
+          <div class="tags-technologies">
+            <span class="tag-tech">Arduino</span>
+            <span class="tag-tech">C++</span>
+            <span class="tag-tech">IoT</span>
+          </div>
+          <div class="liens-documents-projet">
+            <a href="assets/documents/Rapport_dht11.pdf" target="_blank" class="lien-document lien-document-principal">
+              <span class="icone-document">🗂️</span> Simulation
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 3 -->
+      <div class="carte-projet-portfolio" data-categorie="signal">
+        <div class="image-projet-placeholder">
+          <img src="assets/projets/exemple-signal.jpg" alt="Traitement du signal Matlab">
+        </div>
+        <div class="contenu-carte-projet">
+          <div class="badge-categorie">
+            <span class="icone-badge">🔧</span>
+            TRAITEMENT DU SIGNAL
+          </div>
+          <h3>Filtrage numérique d'un signal audio</h3>
+          <p>Analyse spectrale et conception de filtres numériques (passe-bas, passe-haut) appliqués à un signal audio réel.</p>
+          <p class="competences-projet">Compétences acquises : transformée de Fourier, conception de filtres, Matlab.</p>
+          <div class="tags-technologies">
+            <span class="tag-tech">Matlab</span>
+            <span class="tag-tech">FFT</span>
+            <span class="tag-tech">Filtrage</span>
+          </div>
+          <div class="liens-documents-projet">
+            <a href="assets/documents/doc_6a491d447d8225.35027566.pdf" target="_blank" class="lien-document lien-document-secondaire">
+              <span class="icone-document">📊</span> Présentation
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="message-vide" id="messageAucunProjet" style="display: none;">
+      Aucun projet dans cette matière pour le moment.
+    </p>
+  </section>
+
+  <!-- COMPÉTENCES -->
+<section id="competences" class="section-competences">
+  <h2 class="titre-section">Compétences</h2>
+
+  <div class="bloc-competences">
+
+    <div class="barres-competences">
+      <div class="barre-item">
+        <div class="barre-label">
+          <span>Réseaux &amp; Télécommunications</span>
+          <span>90%</span>
+        </div>
+        <div class="barre-fond">
+          <div class="barre-remplissage" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="barre-item">
+        <div class="barre-label">
+          <span>Traitement du Signal</span>
+          <span>80%</span>
+        </div>
+        <div class="barre-fond">
+          <div class="barre-remplissage" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="barre-item">
+        <div class="barre-label">
+          <span>Systèmes Embarqués</span>
+          <span>75%</span>
+        </div>
+        <div class="barre-fond">
+          <div class="barre-remplissage" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="barre-item">
+        <div class="barre-label">
+          <span>Fibre Optique &amp; Transmission</span>
+          <span>70%</span>
+        </div>
+        <div class="barre-fond">
+          <div class="barre-remplissage" style="width: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="barre-item">
+        <div class="barre-label">
+          <span>Développement Web (HTML/CSS/JS)</span>
+          <span>85%</span>
+        </div>
+        <div class="barre-fond">
+          <div class="barre-remplissage" style="width: 85%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grille-outils">
+      <div class="carte-outil"><span class="icone-outil">🐍</span><span>Python</span></div>
+      <div class="carte-outil"><span class="icone-outil">🐧</span><span>Linux/Shell</span></div>
+      <div class="carte-outil"><span class="icone-outil">🌐</span><span>Packet Tracer</span></div>
+      <div class="carte-outil"><span class="icone-outil">🔧</span><span>Arduino</span></div>
+      <div class="carte-outil"><span class="icone-outil">📡</span><span>Matlab</span></div>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p class="section-sub">Disponible pour un stage ou une collaboration</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info">
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon">✉</span>
+            <a href="mailto:payiemarianeelola@gmail.com">payiemarianeelola@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-icon">☎</span>
+            <a href="tel:+221778308628">+221 77 830 86 28</a>
+          </li>
+          <li>
+            <span class="contact-icon">💬</span>
+            <span>WhatsApp : +226 75 78 20 50</span>
+          </li>
+          <li>
+            <span class="contact-icon">📍</span>
+            <span>Fass Paillote, Dakar — Sénégal</span>
+          </li>
+          <li>
+            <span class="contact-icon">🎓</span>
+            <span>ESMT Dakar — Ingénieure de Conception Télécom (INGC1)</span>
+          </li>
+          <li>
+            <span class="contact-icon">💼</span>
+            <a href="https://www.linkedin.com/in/payié-mariane-elola-85a062267" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--
+        FORMULAIRE via Formspree (aucun serveur nécessaire) :
+        1. Crée un compte sur https://formspree.io
+        2. Crée un "Form", copie l'URL du type https://formspree.io/f/xxxxxxx
+        3. Remplace l'URL ci-dessous (action) par la tienne
+      -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkolazkb" method="POST" novalidate>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="ex. Jean Dupont" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="ex. jean@exemple.com" required>
+        </div>
+        <div class="form-group">
+          <label for="sujet">Sujet</label>
+          <input type="text" id="sujet" name="_subject" placeholder="Stage, collaboration, question...">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Envoyer le message</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-portfolio">
+    <span class="logo-footer">EPM</span>
+    <span class="copyright">&copy; 2026 Elola Payié Mariane. Portfolio Télécommunications.</span>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
